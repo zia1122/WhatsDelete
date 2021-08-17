@@ -1,0 +1,114 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.malam.whatsdelet.nolastseen.hiddenchat.Fragments.ImagesFragment">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/adz_layout">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+            <LinearLayout
+                android:id="@+id/noChat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/error" />
+
+                <TextView
+                    android:id="@+id/no_file_found_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:text="@string/nostatus_f"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_18sdp" />
+
+                <TextView
+                    android:id="@+id/no_file_found"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_margin="@dimen/_13sdp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/no_status_msg"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_13sdp" />
+
+                <Button
+                    android:id="@+id/refresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:background="@drawable/exit_btn_bg"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:paddingRight="@dimen/_20sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="@string/refresh"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"></Button>
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"></ProgressBar>
+
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/adz_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fl_adplaceholder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:visibility="gone"></FrameLayout>
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/myadView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone"
+                app:adSize="SMART_BANNER"
+                app:adUnitId="@string/bannerAd" />
+        </LinearLayout>
+
+
+
+
+</FrameLayout>

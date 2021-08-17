@@ -1,0 +1,120 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
+android {
+    compileSdkVersion 30
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.whatsdelete.Test"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 12
+        versionName "1.1.2"
+
+
+        multiDexEnabled true
+        vectorDrawables {
+            useSupportLibrary = true
+        }
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath false
+            }
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment:2.0.0'
+    implementation 'androidx.navigation:navigation-ui:2.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'androidx.preference:preference:1.1.0-alpha05'
+    implementation 'androidx.work:work-runtime:2.2.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.google.android.gms:play-services-ads:18.3.0'
+
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'/*
+    implementation 'com.android.support:recyclerview-v7:28.0.0'*/
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    annotationProcessor "androidx.room:room-compiler:2.2.2"
+    implementation "androidx.room:room-runtime:2.2.2"
+    implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
+    implementation "androidx.sqlite:sqlite-framework:2.0.1"
+    implementation 'com.google.android.play:core:1.9.0'
+    implementation 'com.google.firebase:firebase-analytics:19.0.0'
+
+    implementation 'com.google.firebase:firebase-crashlytics:18.1.0'
+    implementation 'com.google.firebase:firebase-messaging:22.0.0'
+    /*android room from developers android*/
+
+    // ViewModel and LiveData
+    implementation "android.arch.lifecycle:extensions:1.1.0"
+    // alternatively, just ViewModel
+    implementation "android.arch.lifecycle:viewmodel:1.1.0"
+    // alternatively, just LiveData
+    implementation "android.arch.lifecycle:livedata:1.1.0"
+
+    annotationProcessor "android.arch.lifecycle:compiler:1.1.0"
+
+    // Room (use 1.1.0-alpha1 for latest alpha)
+    implementation "android.arch.persistence.room:runtime:1.0.0"
+    annotationProcessor "android.arch.persistence.room:compiler:1.0.0"
+
+    // Paging
+    implementation "android.arch.paging:runtime:1.0.0-alpha5"
+    // Test helpers for LiveData
+    testImplementation "android.arch.core:core-testing:1.1.0"
+
+    // Test helpers for Room
+    testImplementation "android.arch.persistence.room:testing:1.0.0"
+
+    implementation 'com.android.support:cardview-v7:26.1.0'
+
+    implementation 'com.ogaclejapan.smarttablayout:library:1.7.0@aar'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'androidx.work:work-runtime:2.2.0'
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.orhanobut:hawk:2.0.1'
+    implementation 'com.linsea:universalvideoview:1.1.0@aar'
+
+    implementation 'com.onesignal:OneSignal:4.4.0'
+    implementation 'com.facebook.shimmer:shimmer:0.1.0@aar'
+    implementation 'com.hbb20:ccp:2.2.3'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+
+    //Indicators
+    implementation 'com.tbuonomo:dotsindicator:4.2'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+}
+
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'

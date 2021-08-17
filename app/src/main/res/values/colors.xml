@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#128c7e</color>
+    <color name="colorPrimaryDark">#128779</color>
+    <color name="colorAccent">#128c7e</color>
+    <color name="colorAccent_blue">#128c7e</color>
+    <color name="blue">#2196F3</color>
+    <color name="textColorUnselected">#D4D4D4</color>
+    <color name="blackText">#000</color>
+    <color name="black">#000</color>
+    <color name="note_list_text">#232323</color>
+    <color name="timestamp">#858585</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#F80D0D</color>
+    <color name="bg_color">#ffffff</color>
+    <color name="disable_color">#CCCC</color>
+
+    <color name="whastapp_color">#25d366</color>
+    <color name="messenger_color_code">#006AFF</color>
+    <color name="insta_color_code">#833AB4</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="pattern_wrong">#ff4040</color>
+    <color name="dark_mode_bg">#222222</color>
+    <color name="White">#ffffff</color>
+    <color name="grayy">#E4E4E4</color>
+    <color name="green">#08995a</color>
+    <color name="transparnt">#00FFFFFF</color>
+    <color name="green_trans">#EE81ECAB</color>
+    <color name="chat_selectr">#B0128C7E</color>
+
+    <!--New UI color-->
+    <color name="buttonTextColor">#03857F</color>
+    <color name="buttonStockColor">#03857F</color>
+    <color name="textColor">#373737</color>
+    <color name="buttonBgColor">#F2F2F2</color>
+    <color name="topBarcolor"> #037B76</color>
+    <color name="secondBarcolor">#03857F</color>
+    <color name="uiBackroundColor">#EEEEEE</color>
+
+</resources>

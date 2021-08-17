@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/_120sdp">
+
+    <ImageView
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/appname_top"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/ic_how_dose_it_work_3" />
+
+    <TextView
+        android:id="@+id/appname_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:fontFamily="@font/seguisb"
+        android:textStyle="normal"
+        android:textSize="25sp"
+        android:textColor="@color/buttonStockColor"
+        android:gravity="center_horizontal"
+        android:text="How does it work?" />
+
+    <LinearLayout
+        android:id="@+id/how1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appname_top"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_15sdp"
+            android:src="@drawable/dot_circle"
+            android:tint="@color/green" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/desc"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat_medium"
+            android:textStyle="normal"
+            android:text="@string/work3_1"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/_10sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/how2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/how1"
+
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_15sdp"
+            android:src="@drawable/dot_circle"
+            android:tint="@color/green" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/desc"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat_medium"
+            android:textStyle="normal"
+            android:text="@string/work3_2"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/_10sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/how3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/how2"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_15sdp"
+            android:src="@drawable/dot_circle"
+            android:tint="@color/green" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/work3_3"
+            android:textColor="@color/textColor"
+            android:fontFamily="@font/montserrat_medium"
+            android:textStyle="normal"
+            android:textSize="@dimen/_10sdp" />
+    </LinearLayout>
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/how3"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_15sdp"
+            android:src="@drawable/circle_more_apps"
+            android:tint="@color/green" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/how_to_use7"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_medium"
+            android:textStyle="normal"
+            android:textSize="@dimen/_10sdp" />
+    </LinearLayout>-->
+
+
+</RelativeLayout>

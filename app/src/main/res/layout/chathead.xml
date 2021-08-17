@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/chathead_img"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@mipmap/chat_head">
+    </de.hdodenhof.circleimageview.CircleImageView>
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@mipmap/whatsapp_small_icon"
+    android:layout_marginLeft="@dimen/_35sdp"
+    android:layout_marginTop="@dimen/_35sdp"
+    android:id="@+id/message_from_imageview"></ImageView>
+</RelativeLayout>

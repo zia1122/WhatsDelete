@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_115sdp"
+        android:background="@mipmap/documents_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/main_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+                <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/music_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="audio name "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"></TextView>
+
+                <TextView
+                    android:id="@+id/music_file_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="2 mb"
+                    android:textSize="@dimen/_10sdp"
+                    android:alpha="0.8"
+                    android:textColor="@color/black"></TextView>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                 android:layout_centerHorizontal="true"
+                android:src="@mipmap/document_icon"></ImageView>
+<TextView
+    android:visibility="gone"
+    android:layout_width="@dimen/_60sdp"
+    android:layout_height="@dimen/_15sdp"
+    android:id="@+id/type_text"
+    android:text="pdf"
+    android:textSize="@dimen/_10sdp"
+    android:gravity="center"
+    android:background="@drawable/yes"
+    android:layout_marginTop="@dimen/_45sdp"
+    android:layout_centerHorizontal="true"
+     android:textColor="@color/white"/>
+            <ImageView
+                android:id="@+id/share_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:padding="@dimen/_5sdp"
+                android:src="@mipmap/share_audio"
+                android:visibility="gone"></ImageView>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/selectedImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_margin="@dimen/_7sdp"
+        app:srcCompat="@mipmap/check">
+
+    </androidx.appcompat.widget.AppCompatImageView>
+</RelativeLayout>

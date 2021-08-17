@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/your_dialog_root_element">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/roundshape_dialougs"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:contentDescription="@string/notification_access"
+            app:srcCompat="@drawable/ic_notification_access" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:fontFamily="@font/seguisb"
+            android:textStyle="normal"
+            android:textSize="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:textColor="@color/buttonStockColor"
+            android:gravity="center"
+            android:text="Permission Access" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_11sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/textColor"
+            android:gravity="center"
+            android:layout_margin="15dp"
+            android:textStyle="normal"
+            android:fontFamily="@font/seguisb"
+            android:text="@string/permission_message"/>
+        <Button
+            android:id="@+id/ok_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:text="@string/allow"
+            android:textSize="@dimen/_12sdp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/seguisb"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:textStyle="normal"
+            android:layout_marginHorizontal="80dp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:padding="@dimen/_10sdp"
+        android:id="@+id/cancel_btn"
+        android:background="@drawable/top_btn_slctr"
+        android:src="@mipmap/close_dialoug"></ImageView>
+</RelativeLayout>

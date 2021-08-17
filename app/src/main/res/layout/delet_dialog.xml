@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/roundshape_dialougs"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@+id/top"
+        android:gravity="center"
+        android:text="@string/delet_conform"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:fontFamily="@font/montserrat_semibold"
+        android:background="@drawable/n_acces_bg"
+        android:textSize="@dimen/_17sdp" />
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/_15sdp"
+            app:srcCompat="@drawable/ic_old_chat_delete" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/del_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_medium"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:maxWidth="@dimen/_210sdp"
+        android:text="@string/delete_msg"
+        android:textSize="@dimen/_15sdp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:gravity="center"
+      android:background="?attr/selectableItemBackground"
+        android:id="@+id/delete_cancle"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:padding="@dimen/_5sdp"
+        android:minWidth="@dimen/_80sdp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_bg_new"
+         android:drawableTint="@color/colorAccent_blue"
+        android:text="@string/no"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:background="?attr/selectableItemBackground"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete_ok"
+        android:layout_weight="1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:minWidth="@dimen/_80sdp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+         android:padding="@dimen/_5sdp"
+        android:text="@string/yes"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp" />
+
+</LinearLayout>
+</LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

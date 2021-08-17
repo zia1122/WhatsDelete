@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<ProgressBar
+    android:layout_width="wrap_content"
+    android:layout_centerInParent="true"
+    android:id="@+id/progress_bar"
+    android:visibility="gone"
+    android:layout_height="wrap_content">
+
+</ProgressBar>
+    <FrameLayout
+        android:id="@+id/frame_layout_adapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frame_layout_adapter"
+        android:orientation="vertical"
+        android:background="@mipmap/main_chat_bg"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:padding="@dimen/_10sdp">
+
+        <LinearLayout
+            android:id="@+id/timestamp_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/date_n_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="@color/timestamp"
+                android:textSize="@dimen/timestamp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/selectedImage"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:visibility="gone"
+                app:srcCompat="@mipmap/check" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_user" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_of_caller"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                app:srcCompat="@drawable/ic_user">
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/timestamp_layout"
+                    android:layout_toRightOf="@id/dot"
+                    android:singleLine="true"
+                    android:text=""
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/note_list_text"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/contact_number_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/note"
+                    android:layout_toRightOf="@id/dot"
+                    android:singleLine="true"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textStyle="normal"
+                    android:textColor="@color/timestamp"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/timestamp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/call_time_txtview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text=""
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/timestamp"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/dat_n_time_iteration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="00:00"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/timestamp"
+                    android:textSize="10dp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/num_of_unread_msgs_layout"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_gravity="right"
+                    android:background="@mipmap/num_unread_msgs_bg"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:gravity="right"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:id="@+id/num_of_unread_msgs_txtview"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_9sdp"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <View
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_marginLeft="@dimen/_70sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/colorPrimary"></View>
+    </LinearLayout>
+</RelativeLayout>

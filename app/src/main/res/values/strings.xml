@@ -1,0 +1,300 @@
+<resources>
+    <string name="app_name">WhatsDelete</string>
+    <string name="app_name_share"><b>Deleted Messages</b></string>
+    <string name="app_pref_name">whatsdelet_Whatsapp_pref</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="vicky_s8" translatable="false">0F47958573AFCC984D04E02D98867FA1</string>
+    <string name="test_device_j5" translatable="false">A86A0D556F68465C49063589837FCF98</string>
+
+
+    <string name="test_device_white" translatable="false">D28EE3E999EAA649483C29D6CE7B5522</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="menu_share">Share</string>
+    <string name="allow">Allow Access</string>
+    <string name="notification_access">Notification Access</string>
+    <string name="notification">Notification</string>
+    <string name="notification_message">App needs to access this Permission in order to get WhatsApp Chat Notifications.</string>
+    <string name="permission_message">App needs to access this Permission in order to get Android 11 Access.</string>
+    <string name="home">Home</string>
+    <string name="contact_name_pref">contact_name_pref</string>
+    <string name="contact_image_pref">contact_image_pref</string>
+    <string name="delete">Delete</string>
+    <string name="dialoug_message">Are you sure you want to delete this file ?</string>
+    <string name="file_deleted_pref">file_deleted_pref</string>
+    <string name="refresh">Refresh Data</string>
+    <string name="long_pressd_pref">long_pressd_pref</string>
+    <string name="whatsapp_status">WhatsApp Status</string>
+    <string name="whatsapp_audio">WhatsApp Audios</string>
+    <string name="delete_diloug_title_pref">delete_diloug_title_pref</string>
+    <string name="delete_dialoug_msg_pref">delete_dialoug_msg_pref</string>
+    <string name="delete_images_title">Delete Image(s) !</string>
+    <string name="delete_images_msg">Are you sure you want to delete selected image(s) ?</string>
+    <string name="delete_contact_title">Delete Contact(s) !</string>
+    <string name="delete_contact_msg">Are you sure, you want to delete this conversation(s) ?</string>
+    <string name="delete_tabs_position_pref">delete_tabs_position_pref</string>
+    <string name="delete_audio_title">Delete Audio(s) !</string>
+    <string name="delete_audio_msg">Are you sure you want to delete selected audio(s) ?</string>
+    <string name="delete_video_title">Delete Video(s) !</string>
+    <string name="delete_video_msg">Are you sure you want to delete selected video(s) ?</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="exit">Exit</string>
+    <string name="more_apps">More Apps</string>
+    <string name="account_name">malam</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="info">Info</string>
+    <string name="permission_require">Permissions Required</string>
+    <string name="notification_access_msg">WhatsDelete requires \'<b>Notification Access</b>\' permission for incoming <b>WhatsApp</b> messages notifications.</string>
+    <string name="storage_acces">Storage Access</string>
+    <string name="storage_access_msg">WhatsDelete requires \'<b>Storage Access</b>\' permission for accessing storage media</string>
+    <string name="long_pressd_specific_chat_pref">long_pressd_specific_chat_pref</string>
+    <string name="delete_msgs">Delete Messages !</string>
+    <string name="delete_msgs_msg">Are you sure, you want to delete this message(s) ?</string>
+
+    <!-- Test ID-->
+
+    <string name="appId">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="nativeID">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="bannerAd">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="bannerAd_notification_chat">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="intrestialAd">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="nativeID_receyler_view">ca-app-pub-3940256099942544/2247696110</string>
+
+    <!--Active ID-->
+
+    <!--  <string name="bannerAd" translatable="false">ca-app-pub-3107196045483052/2408505830</string>
+    <string name="intrestialAd" translatable="false">ca-app-pub-3107196045483052/7277689131</string>
+    <string name="appId" translatable="false">ca-app-pub-3107196045483052~4422287472</string>
+    <string name="bannerAd_notification_chat" translatable="false">ca-app-pub-3107196045483052/2408505830</string>
+    <string name="nativeID_receyler_view">ca-app-pub-3107196045483052/8207627428</string>
+    <string name="nativeID" translatable="false">ca-app-pub-3107196045483052/8207627428</string>-->
+
+
+    <string name="zegar_device">BDCCDF627FC9326734EEB1D03387F031</string>
+    <string name="image_position_pref">image_position_pref</string>
+    <string name="from_status_pref">from_status_pref</string>
+    <string name="reply_on_whatsapp">Reply on WhatsApp</string>
+    <string name="reply">Reply</string>
+    <string name="cancel">Cancel</string>
+    <string name="warninig">Warning !</string>
+    <string name="warninig_msg_open_whatsapp">If you reply, your friend will know that you read his/her last message(s)</string>
+    <string name="show_ur_love">Show your love on Play Store</string>
+    <string name="submit">Submit</string>
+    <string name="long_pressd_saved_files_pref">long_pressd_saved_files_pref</string>
+    <string name="from_saved_files_pref">from_saved_files_pref</string>
+    <string name="long_pressd_status_pref">long_pressd_status_pref</string>
+    <string name="delete_status_title">Delete Status !</string>
+    <string name="delete_status_msg">Are you sure you want to delete selected status ?</string>
+    <string name="delete_file_status_pref">delete_file_status_pref</string>
+    <string name="delete_file_saved_files_pref">delete_file_saved_files_pref</string>
+    <string name="delete_file_images_pref">delete_file_images_pref</string>
+    <string name="chat">Chat</string>
+    <string name="status">Statuses</string>
+    <string name="chat_clear_pref">chat_clear_pref</string>
+    <string name="chat_position_pref">chat_position_pref</string>
+    <string name="opps_somthing_went_wrong">Opps! Something went wrong. Please try again…</string>
+    <string name="intent_name">Msg</string>
+    <string name="intent_name_refresh">refresh</string>
+    <string name="intent_name_refresh_messenger">refresh</string>
+    <string name="intent_name_messenger">Messanger_Msg</string>
+    <string name="intent_name_delete_audio">delete_audio</string>
+    <string name="please_select_atleast_one_image_delete">Please select atleast one message to delete.</string>
+    <string name="enter_ur_msg"><i>Type a message...</i></string>
+    <string name="whatsapp_not_installed">WhatsApp has not been installed on your phone</string>
+    <string name="share_video_via">Share video via</string>
+    <string name="list_updated">List updated</string>
+    <string name="share_image_via">Share image via</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="play_sound_via">Play Sound via</string>
+    <string name="long_pressd_messenger_pref">long_pressd_messenger_pref</string>
+    <string name="reply_on_messenger">Reply on Messenger</string>
+    <string name="reply_on_instagram">Reply on Instagram</string>
+    <string name="chat_clear_messenger_pref">chat_clear_messenger_pref</string>
+    <string name="save">Save</string>
+    <string name="whatsApp">WhatsApp</string>
+    <string name="show_notification_pref">show_notification_pref</string>
+    <string name="from_sender">SENDER</string>
+    <string name="from_receiver">RECEIVER</string>
+    <string name="not_chat_found">No new messages !</string>
+    <string name="make_sound_notification_pref">make_sound_notification_pref</string>
+
+    <!-- Preference Titles -->
+
+    <!-- Messages Preferences -->
+
+    <!-- Sync Preferences -->
+    <string name="show_notification">Show Notification</string>
+    <string name="sound">Sound</string>
+    <string name="sound_on_notification">Enable sound on notification</string>
+    <string name="vibration">Vibration</string>
+    <string name="vibration_on_notification">Enable vibration on notification</string>
+    <string name="make_vibration_notification_pref">make_vibration_notification_pref</string>
+    <string name="num_of_unread_msgs_pref">num_of_unread_msgs_pref</string>
+    <string name="total_unread_msgs_pref">total_unread_msgs_pref</string>
+    <string name="promotion_package_name_pref">promotion_package_name_pref</string>
+    <string name="images">Images</string>
+    <string name="videos">Videos</string>
+    <string name="audio">Audios</string>
+    <string name="title_activity_video_player_">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="path_of_video_intent">path_of_video_intent</string>
+    <string name="whatsdelet_head_chat_is_active">whatsdelet Head chat is active</string>
+    <string name="show_head_chat_pref">show_head_chat_pref</string>
+    <string name="dark_mode_pref">dark_mode_pref</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="chat_head">Chat Head</string>
+    <string name="change_pass_pref">change_pass_pref</string>
+    <string name="pin_set_pref">pin_set_pref</string>
+
+
+    <string name="enter_old_pin">First enter old PIN for verification</string>
+    <string name="pin_pref">pin_pref</string>
+    <string name="wrong_pin">Wrong PIN</string>
+    <string name="pin_didnot_match">PIN didn\'t match</string>
+    <string name="enter_pin">Enter PIN</string>
+    <string name="pin">PIN</string>
+    <string name="confirm_pin_code">Confirm PIN Code</string>
+    <string name="video_path">video_path</string>
+    <string name="is_net_connected_intent">is_net_connected_intent</string>
+    <string name="intent_name_instagram">intent_name_instagram</string>
+    <string name="chat_clear_instagram_pref">chat_clear_instagram_pref</string>
+    <string name="chat_position_from_chathead">chat_position_from_chathead</string>
+    <string name="long_pressd_instagram_pref">long_pressd_instagram_pref</string>
+    <string name="intent_name_refresh_insta">intent_name_refresh_insta</string>
+    <string name="security_pin">Security PIN</string>
+    <string name="deleted_media">Deleted Media</string>
+    <string name="is_image_intent">is_image_intent</string>
+    <string name="is_audio_intent">is_audio_intent</string>
+    <string name="new_status_availible_please_check">"Deleted Images available "</string>
+    <string name="service_is_running_pref">service_is_running_pref</string>
+    <string name="image_status_availible_please_check">"Deleted Image available "</string>
+    <string name="video_status_availible_please_check">"Deleted Video available "</string>
+    <string name="you_will_be_notify_when_status_avalible">"You will be notified when deleted media is available "</string>
+    <string name="audio_status_availible_please_check">Deleted Audio available</string>
+    <string name="intent_file_saved_images">refresh_images</string>
+    <string name="intent_file_saved_videos">refresh_videos</string>
+    <string name="intent_file_saved_audio">refresh_audios</string>
+    <string name="delete_file_deletedimages_pref">delete_file_deletedimages_pref</string>
+    <string name="voice_status_availible_please_check">Deleted Voice available, Please check</string>
+    <string name="intent_file_saved_voice">refresh_voice</string>
+    <string name="third_party_terms" translatable="false">Please note that your access to and use of the apps may be subject to certain third-party terms and conditions and privacy policies. You recognize and agree that we is not liable for any such third-party terms and conditions and any third party\'s use of your Personal data. Here are links to the privacy policies of a few of the distributors we use: Google </string>
+    <string name="third_party_terms_link" translatable="false">   - <u><b>Privacy Policy</b></u></string>
+    <string name="privacy_policy_disclamer" translatable="false">a). Malam will not assume any responsibility for any of your personal information that is disclosed for your own reasons (for example, when you voluntarily disclose to other people your password or when you share your account with other people). \n\n b). Malam assumes no responsibility for any personal information that is lost, disclosed, or falsified due to forces beyond Malam\'s control, including but not limited to events that may affect normal network operations, such as hacker attack, intrusion or attack of computer virus and temporary closure of websites due to government regulations
+        or actions. \n\nc). Malam assumes no responsibility when it or a third party uses your personal information in accordance with provisions of relevant laws or regulations or this privacy policy.</string>
+    <string name="account_email">lokaliailkia@gmail.com</string>
+    <string name="privacy_policy_ad_serving" translatable="false">We may disclose Non-personal data to third parties and/or allow third parties to collect Non-personal data through their own embedded technology. In order to deliver ads to you, the third-party advertising companies may place or recognize unique cookies, anonymous identifiers or similar technology for non-personally identifiable information. We use only Admob by Google for advertisement purpose. If you would like more information, please follow the link below: AdMob by Google </string>
+    <string name="privacy_policy_ad_serving_link" translatable="false"> - <u><b>Google Privacy</b></u> </string>
+
+    <string name="privacy_policy_email_us_link">lokaliailkia@gmail.com</string>
+    <string name="privacy_policy_email_us">Email us at</string>
+    <string name="long_pressd_deleted_images_pref">long_pressd_deleted_images_pref</string>
+    <string name="long_pressd_deleted_audio_pref">long_pressd_deleted_audio_pref</string>
+    <string name="long_pressd_deleted_video_pref">long_pressd_deleted_video_pref</string>
+    <string name="long_pressd_deleted_voice_pref">long_pressd_deleted_voice_pref</string>
+    <string name="share_voice_via">share_voice_via</string>
+    <string name="delete_voice_title">delete_voice_title</string>
+    <string name="delete_voice_msg">delete_voice_msg</string>
+    <string name="voice">Voice</string>
+    <string name="remove_all_notification_broadcast">remove_all_notification_broadcast</string>
+    <string name="app_is_open_pref">app_is_open_pref</string>
+    <string name="open_whatsapp_act">open_whatsapp_act</string>
+    <string name="open_messenger_act">open_messenger_act</string>
+    <string name="open_insta_act">open_insta_act</string>
+    <string name="open_chat_head_service_pref">open_chat_head_service_pref</string>
+    <string name="broad_cast_intent_for_main_chat">broad_cast_intent_for_main_chat</string>
+    <string name="open_main">open_main</string>
+    <string name="open_mainactivity">open_mainactivity</string>
+    <string name="ducoments">Documents</string>
+    <string name="voices">Voices</string>
+    <string name="documents_status_availible_please_check">Deleted documents available please check it</string>
+    <string name="how_it_work"><u>How it works</u></string>
+    <string name="how_to_use1">Open the WhatsDelete App</string>
+    <string name="how_to_use2">Turn on auto download media setting from WhatsApp app for better WhatsDelete performance.</string>
+    <string name="how_to_use3">Save deleted media files ( Images, Videos, Voice, Notes, Audio Documents ).</string>
+    <string name="how_to_use4">You will be notified if any message is deleted from sender.</string>
+    <string name="how_to_use5">Turn On/Off duplication in order to save storage.</string>
+    <string name="how_to_use6">Check/uncheck tabs from settings to save/unsave that deleted media files.</string>
+    <string name="how_to_use7">Your Device Notifications must be TURNED ON for getting deleted messages from whatsapp.</string>
+    <string name="notify">Notification when messages received</string>
+    <string name="media_switch_notify_pref">media_switch_notify_pref</string>
+    <string name="deleted_by">Deleted by Sender</string>
+    <string name="long_pressd_del_ducoments_pref">long_pressd_del_ducoments_pref</string>
+    <string name="view_downloaded">Downloaded Status</string>
+    <string name="notify_media">Notification on attachment deleted</string>
+    <string name="intent_file_saved_docs">intent_file_saved_docs</string>
+    <string name="update_msg">Please wait while we update the app data!</string>
+    <string name="refreshing">Refreshing</string>
+    <string name="delet_conform">Confirm Delete?</string>
+    <string name="delete_msg">Are you sure do you want to delete the selected items?</string>
+    <string name="no_video_msg">All WhatsApp Videos will be detected here after installing this App</string>
+    <string name="no_image_msg">All WhatsApp Images will be detected here after installing this App</string>
+    <string name="no_docs_msg">All WhatsApp Documents will be detected here after installing this App</string>
+    <string name="no_voice_msg">All WhatsApp Voices will be detected here after installing this App</string>
+    <string name="no_audio_msg">All WhatsApp Audio will be detected here after installing this App</string>
+    <string name="audio_head"><u>No Deleted Audio</u></string>
+    <string name="voice_head"><u>No Deleted Voice</u></string>
+    <string name="image_head"><u>No Deleted Images</u></string>
+    <string name="video_head"><u>No Deleted Video</u></string>
+    <string name="docs_head"><u>No Deleted Document</u></string>
+    <string name="nostatus_f"><u>No Status Available</u></string>
+    <string name="no_status_msg">Can’t find any Status on WhatsApp. Make sure you have watched statuses on <b>WhatsApp</b>.</string>
+    <string name="share_using">share_using</string>
+    <string name="share_msg_subject">Share from WhatsDelete</string>
+    <string name="share">Share App</string>
+    <string name="documents">Documents</string>
+    <string name="statu_saver">New Whatsapp Statuses</string>
+    <string name="statu_saver1">Download Statuses</string>
+    <string name="chat_clear_">Clear all old messages</string>
+    <string name="watchhow_to_use">Watch how it works</string>
+    <string name="previewprivacy_policy">Preview our Privacy policy</string>
+    <string name="Allow">Allow Access</string>
+    <string name="storagepermision">Storage access is required in ordered to view photos, videos and other files</string>
+    <string name="exit_msg">Do you want to exit this app?</string>
+    <string name="delete_chat">Do you want to delete all chat ?</string>
+    <string name="long_pressd_downstatus_pref">long_pressd_downstatus_pref</string>
+    <string name="please_wait_while_downloading">"Please wait while downloading status"</string>
+    <string name="please_wait_while_deleting">Please wait while deleting saved status</string>
+    <string name="safeandSecure"><u>100% Safe and Secure</u></string>
+    <string name="quit">Quit</string>
+    <string name="home_text">Whats Delete: View Deleted Messages</string>
+    <string name="direct_messaging">Direct Chat</string>
+    <string name="help">Help</string>
+    <string name="whatsdelete">Deleted Whatsapp\n Messages</string>
+    <string name="delete_media">Deleted Chat\n Media</string>
+    <string name="how_to_use">How to Use</string>
+    <string name="main_grid_images_link">http://malamtakor.com/android_promo/json/getsmalladv.php?takemyapp=1</string>
+
+    <!--change app Strings-->
+    <string name="work1_1">This app can\'t access messages direclty as they are stored encrypted. </string>
+    <string name="work1_2">when a message is deleted and a backup of the same messages exists.</string>
+    <string name="work1_3">the app sends you a notification with the deleted message\'s content</string>
+    <string name="work2_1">Notify you after deleted a message.</string>
+    <string name="work2_2">Auto recovers deleted messages &amp; media.</string>
+    <string name="work2_3">Easily restore deleted videos photo recovery.</string>
+    <string name="work3_1">Recover deleted Messages from your contacts.</string>
+    <string name="work3_2">View Deleted Messages of your firends on Whatsapp.</string>
+    <string name="work3_3">What\'s downloader to save image or video of your WA Contacts.</string>
+
+    <string name="downloadstatuses">Downloaded Statuses</string>
+    <string name="splashtext">View all deleted messages easily</string>
+    <string name="safe_secure">Access Required</string>
+    <string name="access">Storage access is required in order to view your photos, videos &amp; other files</string>
+    <string name="button_access">Allow Access</string>
+    <string name="headerText">View all deleted messages</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="long_pressd_images_pref" />
+    <string name="intent_path" />
+    <string name="frag_position" />
+    <string name="hide_download_btn" />
+    <string name="vidoe_path" />
+    <string name="num_pf_time_ad_will_show_pref" />
+    <string name="ads_free_version_pref" />
+    <string name="intent_delete_images" />
+    <string name="refresh_status_intent" />
+    <string name="image_in_gallery">Saved in Gallery</string>
+    <string name="video_saved_gallery">Video Savedin Gallery</string>
+</resources>

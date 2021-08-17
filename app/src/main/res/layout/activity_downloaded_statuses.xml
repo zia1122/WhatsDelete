@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:shimmer="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    tools:context="com.malam.whatsdelet.nolastseen.hiddenchat.Activities.DownloadedStatuses">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/topp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:layout_scrollFlags="snapMargins"
+            app:title="@string/home"
+            app:contentInsetStart="0dp"
+            app:contentInsetLeft="@dimen/dimen_10"
+            android:background="@color/buttonStockColor">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40sp"
+                    android:gravity="center_vertical"
+                    android:text="@string/statu_saver1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/back_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="@dimen/_10sdp"
+                    android:visibility="visible"
+                    app:srcCompat="@mipmap/back" />
+
+
+                <LinearLayout
+                    android:id="@+id/delete_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/ic_share"
+                        app:tint="@color/white"/>
+                    <ImageView
+                        android:id="@+id/delete"
+                        android:layout_width="@dimen/_37sdp"
+                        android:layout_height="@dimen/_36sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:padding="@dimen/_10sdp"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/ic_delete" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.tabs.TabLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                app:tabTextColor="@color/white"
+                app:tabIndicatorColor="@color/white"
+                android:background="@color/buttonStockColor"
+                android:id="@+id/tabs"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/viewPagerDownload"/>
+
+
+    <LinearLayout
+        android:id="@+id/adz_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/myadView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:adSize="SMART_BANNER"
+            app:adUnitId="@string/bannerAd" />
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/ad_loader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="0dp"
+            shimmer:duration="800">
+            <include layout="@layout/ad_loading_animation" />
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/ad_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></FrameLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "13805782778",
+    "project_id": "whatsdelete-zia",
+    "storage_bucket": "whatsdelete-zia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13805782778:android:3c43716ca096579c07ab43",
+        "android_client_info": {
+          "package_name": "com.whatsdelete.Test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13805782778-occ8q8f4vahunadp31u7kc8g03up7m19.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCe9qivHWqYoMn262Q-WHT0KsD2B8Q__G8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13805782778-occ8q8f4vahunadp31u7kc8g03up7m19.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

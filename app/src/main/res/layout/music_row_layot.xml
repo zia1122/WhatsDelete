@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@mipmap/main_chat_bg"
+            android:padding="@dimen/_10sdp">
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/imageView"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:cropToPadding="false"
+                   android:padding="2dp"
+                   android:scaleType="centerCrop"
+                   app:srcCompat="@drawable/ic_voice_1_" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/music_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/black"></TextView>
+
+                <TextView
+                    android:id="@+id/music_file_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"></TextView>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/play_btn"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:background="@drawable/buttons_bg_ok"
+                android:src="@mipmap/play"
+                android:padding="@dimen/_6sdp"
+                android:backgroundTint="#B300B8D4"
+                app:tint="@color/black"
+                android:layout_marginRight="@dimen/_5sdp"/>
+
+            <ImageView
+                android:id="@+id/share_music"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:background="@drawable/audio_play_selectr"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:src="@mipmap/new_audio_share"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/selectedImage"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_17sdp"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:srcCompat="@mipmap/check">
+
+    </androidx.appcompat.widget.AppCompatImageView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:id="@+id/progress"></ProgressBar>
+
+    <FrameLayout
+        android:id="@+id/frame_layout_adapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"></FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/roundshape_dialougs"
+        android:paddingBottom="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textStyle="normal"
+        android:textSize="@dimen/_15sdp"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:background="@drawable/n_acces_bg"
+        android:text="@string/refreshing"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20sdp"
+        android:id="@+id/top" >
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/progress"
+    android:layout_centerInParent="true"
+    android:src="@mipmap/refreshing"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:text="@string/update_msg"
+        android:fontFamily="@font/montserrat_medium"
+        android:textStyle="normal"
+        android:textColor="#000000"
+        android:textSize="@dimen/_13sdp"
+        android:maxWidth="@dimen/_200sdp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/_4sdp"/>
+    </LinearLayout>
+</RelativeLayout>

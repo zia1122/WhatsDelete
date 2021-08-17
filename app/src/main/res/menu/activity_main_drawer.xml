@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group>
+       <!-- <item
+            android:id="@+id/nav_del_chat"
+            android:icon="@mipmap/nav_whatsdelete"
+            android:title="@string/whatsdelete" />-->
+        <item
+            android:visible="false"
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/notification_btn"
+            android:title="Notification"
+            app:actionLayout="@layout/layout_switch" />
+        <item
+            android:visible="false"
+            android:id="@+id/chat_head"
+            android:icon="@drawable/chat_head_notify"
+            android:title="@string/chat_head"
+            app:actionLayout="@layout/layout__chat_head_switch" />
+        <item
+            android:visible="false"
+            android:id="@+id/dark_mode"
+            android:icon="@drawable/dark_mode"
+            android:title="@string/dark_mode"
+            app:actionLayout="@layout/layout_dark_mode_switch" />
+        <item
+            android:visible="false"
+            android:id="@+id/changed_password"
+            android:icon="@drawable/lock"
+            android:title="@string/security_pin"
+            app:actionLayout="@layout/layout_change_password" />
+       <!-- <item
+            android:id="@+id/del_status"
+            android:icon="@mipmap/nav_statussaver"
+            android:title="@string/statu_saver" />-->
+        <item
+            android:visible="false"
+            android:id="@+id/del_images"
+            android:icon="@mipmap/images"
+            android:title="@string/images" />
+        <item
+            android:visible="false"
+            android:id="@+id/del_video"
+            android:icon="@mipmap/videos"
+            android:title="@string/videos" />
+        <item
+            android:visible="false"
+            android:id="@+id/del_audio"
+            android:icon="@mipmap/audios"
+            android:title="@string/audio" />
+
+        <item
+            android:visible="false"
+            android:id="@+id/del_doc"
+            android:icon="@mipmap/documents"
+            android:title="@string/documents" />
+       <!-- <item
+            android:id="@+id/nav_direct_chat"
+            android:icon="@mipmap/nav_directchat"
+            android:title="@string/direct_messaging" />-->
+       <!-- <item
+            android:id="@+id/del_settings"
+            android:icon="@mipmap/nav_setting"
+            android:title="@string/action_settings" />
+        <item
+            android:id="@+id/del_help"
+            android:icon="@mipmap/nav_how_to_use"
+            android:title="@string/how_to_use" />-->
+
+    </group>
+    <group android:id="@+id/dd">
+        <item
+            android:id="@+id/del_rate_us"
+            android:icon="@drawable/ic_rate_us"
+            android:title="@string/rate_us" />
+        <item
+            android:id="@+id/del_share"
+            android:icon="@drawable/ic_share"
+            android:title="@string/share" />
+        <item
+            android:id="@+id/del_moreapps"
+            android:icon="@drawable/ic_more_app"
+            android:title="@string/more_apps"/>
+        <item
+            android:id="@+id/del_privacy"
+            android:icon="@drawable/ic_privacy"
+            android:title="@string/privacy_policy"/>
+
+        <item
+            android:id="@+id/del_info"
+            android:icon="@drawable/ic_info"
+            android:title="@string/info"/>
+
+
+
+        <item
+            android:id="@+id/exit"
+            android:icon="@mipmap/exit_icon"
+            android:title="@string/exit"
+            app:iconTint="@color/buttonStockColor"
+            android:visible="true" />
+    </group>
+
+
+
+    </menu>

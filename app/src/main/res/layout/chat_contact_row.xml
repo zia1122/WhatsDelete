@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EEEEEE"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/timestamp_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ad_layout"
+        android:layout_toRightOf="@id/dot"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/date_n_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/timestamp"
+            android:textSize="@dimen/timestamp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ad_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/frame_layout_adapter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300sdp"
+            android:animateLayoutChanges="true"
+            android:visibility="visible"></FrameLayout>
+
+        <ProgressBar
+            android:id="@+id/progressbar_4_ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:animateLayoutChanges="true"></ProgressBar>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ad_layout"
+        android:id="@+id/main_layout"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal">
+
+
+
+        <LinearLayout
+            android:id="@+id/sender_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deltag"
+            android:layout_marginLeft="10dp"
+            android:minWidth="@dimen/_130sdp"
+            android:layout_toRightOf="@+id/selected"
+            android:background="@drawable/single_chat_bg"
+            android:gravity="bottom"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/contact_chat_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:layout_gravity="start"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:fontFamily="@font/montserrat_medium"
+                android:minWidth="@dimen/_60sdp"
+                android:text="i think is "
+                android:layout_marginTop="3dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="visible" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|top"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <TextView
+                    android:id="@+id/call_time_txtview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:layout_margin="2dp"
+                    android:text="00:00"
+                    android:textColor="@color/black"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/reciver_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:minWidth="@dimen/_130sdp"
+            android:background="@drawable/chat_bg_new_sender"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/contact_chat_textview_reciever"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|top"
+                android:fontFamily="@font/montserrat_medium"
+                android:minWidth="@dimen/_60sdp"
+                android:layout_weight="60"
+                android:layout_margin="@dimen/_5sdp"
+                android:text="Sender"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="normal"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:gravity="bottom|end"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <TextView
+                    android:id="@+id/call_time_txtview_reciver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="2dp"
+                    android:text="00:00"
+                    android:textColor="@color/black"
+                    android:textSize="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/deltag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/selected"
+            android:autoLink="web"
+            android:drawableLeft="@mipmap/deleted"
+            android:drawableRight="@mipmap/deleted"
+            android:linksClickable="true"
+            android:text="@string/deleted_by"
+            android:textColor="@color/red"
+            android:textStyle="italic"
+            android:visibility="gone" />
+        <ImageView
+            android:id="@+id/selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:visibility="visible"
+            app:srcCompat="@mipmap/check"
+            app:tint="@color/buttonStockColor"></ImageView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/chat_bg_new"
+        android:padding="@dimen/_5sdp"
+        android:text="date_n_time"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/dot"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dot_height"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dot_margin_right"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="0dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/dot_text_size" />
+
+</RelativeLayout>

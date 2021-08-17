@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:shimmer="http://schemas.android.com/tools"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/colorPrimary"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:titleTextColor="#ffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackground"
+                android:padding="@dimen/_10sdp"
+                app:srcCompat="@mipmap/back">
+            </ImageView>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_user" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userImage"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"></de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="Vicky"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="@dimen/_37sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:layout_marginEnd="16dp"
+                android:padding="@dimen/_8sdp"
+                app:srcCompat="@drawable/ic_delete"
+                app:tint="@color/white" />
+            <ImageView
+                android:id="@+id/share"
+                android:visibility="gone"
+                android:layout_width="@dimen/_37sdp"
+                android:layout_height="@dimen/_37sdp"
+                android:layout_marginEnd="16dp"
+                android:padding="@dimen/_10sdp"
+                android:background="@drawable/top_btn_slctr"
+                app:tint="@color/white"
+                app:srcCompat="@mipmap/share" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/frame_layout_native_ad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"></FrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/reply_on_whatsapp_layout"
+            android:layout_below="@+id/frame_layout_native_ad"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp" />
+
+        <TextView
+            android:id="@+id/no_chat_found"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="No Chat Found :("
+            android:textColor="@color/textColorUnselected"
+            android:textSize="20sp"
+            android:visibility="gone"></TextView>
+
+        <LinearLayout
+            android:id="@+id/reply_on_whatsapp_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/adz_layout"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/direct_send_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FfFfFe"
+                android:orientation="vertical"
+                android:padding="@dimen/_3sdp"
+                android:visibility="visible">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/chat_edit_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/chat_typing_bg"
+                        android:hint="@string/enter_ur_msg"
+                        android:padding="@dimen/_10sdp"></EditText>
+
+                    <ImageView
+                        android:id="@+id/send"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:padding="@dimen/_5sdp"
+                        app:tint="@color/colorPrimaryDark"
+                        app:srcCompat="@drawable/send"></ImageView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/reply_on_whatsapp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttons_bg_ok"
+                android:text="@string/reply_on_whatsapp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textStyle="bold"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:visibility="visible"></Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/adz_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/ad_loader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="0dp"
+                shimmer:duration="800">
+                <include layout="@layout/ad_loading_animation"/>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+            <FrameLayout
+                android:id="@+id/fl_adplaceholder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:animateLayoutChanges="true"
+                android:visibility="visible"></FrameLayout>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"></ProgressBar>
+    </RelativeLayout>
+
+</LinearLayout>

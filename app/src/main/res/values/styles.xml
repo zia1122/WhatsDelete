@@ -1,0 +1,68 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+     </style>
+
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/white</item>
+    </style>
+
+    <style name="launcher_Setting" >
+        <item name="android:windowBackground">@mipmap/splash</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+    <style name="tabApperance">
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="tabTextColor">@color/black</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
+        <item name="singleLine">true</item>
+    </style>
+    <style name="tabLayoutTitles">
+        <item name="tabSelectedTextColor">@color/white</item>
+        <item name="fontFamily">@font/montserrat_semibold</item>
+        <item name="tabTextAppearance">@style/tabApperance</item>
+        <item name="tabBackground">@drawable/tab_selector</item>
+        <item name="tabMinWidth">@dimen/_100sdp</item>
+        <item name="tabIndicatorHeight">0dp</item>
+        <item name="tabPaddingStart">@dimen/_20sdp</item>
+        <item name="tabPaddingEnd">@dimen/_20sdp</item>
+        <item name="tabRippleColor">@android:color/transparent</item>
+    </style>
+</resources>

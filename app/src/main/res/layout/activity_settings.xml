@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:shimmer="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context="com.malam.whatsdelet.nolastseen.hiddenchat.Activities.Settings">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary"
+        app:layout_scrollFlags="snapMargins"
+        app:title="@string/home"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:titleTextColor="@android:color/black">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40sp"
+                android:gravity="center_vertical"
+                android:text="@string/action_settings"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat_semibold" />
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackground"
+                android:padding="@dimen/_10sdp"
+                app:srcCompat="@mipmap/back" />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/adz_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <RelativeLayout
+        android:id="@+id/notify_perm_media"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notify_perm"
+        android:gravity="left"
+        android:background="?attr/selectableItemBackground"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:text="@string/notify_media"
+            android:layout_toLeftOf="@+id/nitify_switch_mewdia"
+            android:textSize="@dimen/_12sdp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/nitify_switch_mewdia"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/switch_image_notify_media"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_23sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:src="@mipmap/on_toddle"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/notify_perm_media"
+
+        android:background="@mipmap/separator" />
+
+    <RelativeLayout
+        android:id="@+id/clearmessage_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notify_perm_media"
+        android:background="?attr/selectableItemBackground"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="@string/chat_clear_"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/_15sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:tint="@color/black"
+            android:src="@mipmap/expand" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/clearmessage_lay"
+
+        android:background="@mipmap/separator" />
+
+    <RelativeLayout
+        android:id="@+id/watch_tutorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clearmessage_lay"
+        android:layout_marginTop="15dp"
+        android:background="?attr/selectableItemBackground"
+        android:padding="@dimen/_5sdp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/_15sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:src="@mipmap/expand"
+            android:tint="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="@string/watchhow_to_use"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/watch_tutorial"
+
+        android:background="@mipmap/separator" />
+
+    <RelativeLayout
+        android:id="@+id/privacy_policy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/watch_tutorial"
+        android:background="?attr/selectableItemBackground"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="@string/previewprivacy_policy"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/_15sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:tint="@color/black"
+            android:src="@mipmap/expand" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/notify_perm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="left"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="@string/notify"
+            android:fontFamily="@font/montserrat_medium"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:layout_toLeftOf="@+id/nitify_switch"
+            android:textSize="@dimen/_12sdp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/nitify_switch"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/switch_image_notify"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_23sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:src="@mipmap/on_toddle" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/notify_perm"
+
+        android:background="@mipmap/separator" />
+</RelativeLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/adz_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/ad_loader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="0dp"
+            shimmer:duration="800">
+
+            <include layout="@layout/ad_loading_animation" />
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_adplaceholder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:animateLayoutChanges="true"
+            android:visibility="visible"></FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>
